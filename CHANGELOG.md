@@ -6,4 +6,4 @@
 
 ## 1.0.0
 
-The version used in the Map or Ritual study. It reproduces the world manifest hash `5b88c0e967618d8b` on the competition graphs.
+Reproduces the worlds of the Map or Ritual study (manifest hash `5b88c0e967618d8b`) on the competition graphs.

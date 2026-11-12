@@ -26,7 +26,7 @@ pip install git+https://github.com/yerramsettysuchita/graphnull
 
 Or copy [graphnull.py](graphnull.py) into your project. numpy is the only dependency. GraphNull works on Linux, macOS, Windows and Kaggle with Python 3.9 or later.
 
-**Versions.** 1.0.0 is the exact file used in the Map or Ritual study and is the one embedded in the Kaggle notebooks [graphnull-competition-check](https://www.kaggle.com/code/suchitayerramsetty/graphnull-competition-check) and [graphnull-ladder](https://www.kaggle.com/code/suchitayerramsetty/graphnull-ladder). 1.0.1 adds the Windows copy fallback. Null models, seeds, worlds and manifest hashes are identical. See [CHANGELOG.md](CHANGELOG.md).
+**Versions.** 1.0.0 reproduces the worlds of the Map or Ritual study bit for bit (manifest hash 5b88c0e967618d8b) and is the version embedded in the Kaggle notebooks [graphnull-competition-check](https://www.kaggle.com/code/suchitayerramsetty/graphnull-competition-check) and [graphnull-ladder](https://www.kaggle.com/code/suchitayerramsetty/graphnull-ladder). The study itself used the degree and permuted nulls; the stratified and random nulls were added for this release. 1.0.1 adds the Windows copy fallback. Null models, seeds, worlds and manifest hashes are identical. See [CHANGELOG.md](CHANGELOG.md).
 
 ## Quick start
 
@@ -189,11 +189,11 @@ The null is not empty, since real edges carry information that scrambling destro
 
 ### Invariants
 
-With 20 nulls of each kind per commit, the 362 commits give 7,240 null graphs per model. The degree null keeps every node's degree in all of them and changes a median of 97.6% of edges. The stratified null keeps degree and per-file neighbour counts in all of them and changes a median of 67.2%. The random null keeps the edge count and changes almost every edge.
+With 20 nulls of each kind per commit, the 362 commits give 7,240 null graphs per null type. The degree null keeps every node's degree in all of them and changes a median of 97.6% of edges. The stratified null keeps degree and per-file neighbour counts in all of them and changes a median of 67.2%. The random null keeps the edge count and changes almost every edge.
 
 ### Competition check
 
-[graphnull-competition-check](https://www.kaggle.com/code/suchitayerramsetty/graphnull-competition-check) runs the library on all 127 graphs of the Gemma 4 Developer Agent competition. Every degree-null graph keeps every node's degree and a median of 97.9% of edges change. The stratified null keeps degree and per-module profile in all 127 graphs, completes a median of 18% of the requested swaps and changes 34.3% of edges. The worlds have manifest hash `5b88c0e967618d8b`, the hash fixed before the confirmatory runs of the Map or Ritual study, and the notebook prints MATCH. The notebook embeds version 1.0.0 of the library.
+[graphnull-competition-check](https://www.kaggle.com/code/suchitayerramsetty/graphnull-competition-check) runs the library on all 127 graphs of the Gemma 4 Developer Agent competition. Every degree-null graph keeps every node's degree and a median of 97.9% of edges change. The stratified null keeps degree and per-module profile in all 127 graphs, completes a median of 18% of the requested swaps and changes 34.3% of edges. The worlds have manifest hash `5b88c0e967618d8b`, the hash fixed before the confirmatory runs of the Map or Ritual study, and the notebook prints MATCH. The notebook embeds version 1.0.0 of the library, which differs from 1.0.1 only in the Windows copy fallback.
 
 ### Bit-for-bit reproduction
 
