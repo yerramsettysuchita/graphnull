@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use GraphNull, please cite it as below."
+title: "GraphNull: Interface-Matched Null Worlds for Testing Code-Graph Tools"
+type: software
+authors:
+  - name: "Yerramsetty Sai Venkata Suchita"
+  - name: "Manjunath Mailey"
+  - name: "Kanuma Jagan Mohan"
+version: 1.0.1
+license: Apache-2.0
+repository-code: "https://github.com/yerramsettysuchita/graphnull"

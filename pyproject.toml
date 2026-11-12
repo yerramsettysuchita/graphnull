@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphnull"
+version = "1.0.1"
+description = "Interface-matched null worlds for testing code-graph tools"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Yerramsetty Sai Venkata Suchita"},
+    {name = "Manjunath Mailey"},
+    {name = "Kanuma Jagan Mohan"},
+]
+dependencies = ["numpy"]
+
+[project.urls]
+Homepage = "https://github.com/yerramsettysuchita/graphnull"
+
+[tool.setuptools]
+py-modules = ["graphnull"]

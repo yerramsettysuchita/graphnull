@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+worlds/
+*.zip
+*.log
+heldout_work/
+/ladder_results.json
