@@ -12,7 +12,7 @@ Yerramsetty Sai Venkata Suchita, Manjunath Mailey, Kanuma Jagan Mohan
   <img src="paper/figures/card2_1120x560.png" width="720" alt="GraphNull card showing a real call graph, a null that keeps file locality and a null that keeps only degrees">
 </p>
 
-GraphNull writes null worlds for code-graph tools. A null world looks the same to an agent as the real one, with the same tool names, node set, output format and node degrees, and scrambles only the information a claim depends on. If an agent does as well in the null world as in the real one, the gain cannot be credited to that information. The full writeup is [paper/graphnull_writeup.md](paper/graphnull_writeup.md).
+GraphNull writes null worlds for code-graph tools. A null world looks the same to an agent as the real one, with the same tool names, node set, output format and node degrees, and scrambles only the information a claim depends on. If an agent does as well in the null world as in the real one, the gain cannot be credited to that information. The full writeup is [paper/graphnull_writeup.md](paper/graphnull_writeup.md). It is also published on [Kaggle](https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/writeups/graphnull).
 
 ## Why
 
@@ -288,7 +288,8 @@ graphnull/
   author       = {Yerramsetty Sai Venkata Suchita and Manjunath Mailey and Kanuma Jagan Mohan},
   year         = {2026},
   howpublished = {Kaggle Gemma 4 Developer Agent Paper Track},
-  url          = {https://github.com/yerramsettysuchita/graphnull}
+  url          = {https://github.com/yerramsettysuchita/graphnull},
+  note = {https://www.kaggle.com/competitions/gemma-4-developer-agent-paper/writeups/graphnull}
 }
 ```
 
